@@ -1,5 +1,5 @@
 # zen-timer
-A simple meditation timer: https://github.com/HerrBertling/zen-timer
+A simple meditation timer: https://herrbertling.github.io/zen-timer/
 
 ![zen-timer app images](zentimer.png)
 
