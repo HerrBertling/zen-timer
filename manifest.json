@@ -1,0 +1,15 @@
+{
+  "short_name": "Zen Timer",
+  "name": "Zen Timer – a simple meditation timer",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#7670e1",
+  "background_color": "#7670e1"
+}
