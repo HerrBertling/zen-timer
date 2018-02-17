@@ -1,13 +1,31 @@
+.selectWrapper {
+  align-items: center;
+  display: inline-flex;
+  margin: 0 var(--spacingM);
+  position: relative;
+}
 .select {
-  border: 0;
-  background: transparent;
   appearance: none;
+  background: transparent;
+  border: 0;
   color: var(--fontStrong);
   display: inline-block;
-  font-size: var(--fontSize);
   font-family: inherit;
+  font-size: var(--fontSize);
   font-weight: bold;
+  margin: 0;
   outline: none;
-  margin: 0 var(--spacingM);
-  padding: 0;
+  padding: 0 40px 0 0;
+}
+
+.selectWrapper:after {
+  content: "\25bc";
+  display: inline-block;
+  font-size: 3vh;
+  opacity: 0.7;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
 }

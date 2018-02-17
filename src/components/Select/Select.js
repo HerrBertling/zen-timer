@@ -8,9 +8,11 @@ const Select = ({ times, onChange, value }) => {
     </option>
   ));
   return (
-    <select onChange={onChange} value={value} className="select">
-      {options}
-    </select>
+    <div className="selectWrapper">
+      <select onChange={onChange} value={value} className="select">
+        {options}
+      </select>
+    </div>
   );
 };
 
