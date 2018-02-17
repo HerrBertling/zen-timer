@@ -15,11 +15,13 @@
 .timerMinutes,
 .timerSeconds {
   display: inline-block;
-  width: 70px;
+  text-align: center;
+  width: 60px;
 }
 .timerColon {
-  transform: translateY(-7px);
-  width: 20px;
+  text-align: center;
+  transform: translateY(-4px);
+  width: 10px;
 }
 
 .meditationAnimation {
