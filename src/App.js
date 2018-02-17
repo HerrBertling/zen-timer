@@ -23,6 +23,7 @@ class App extends Component {
   };
   startMeditation = event => {
     event.preventDefault();
+    this.playGong(2, 200);
     this.setState(() => ({
       meditationRunning: true
     }));
@@ -32,9 +33,25 @@ class App extends Component {
     }, durationInMs);
   };
   abortMeditation = () => {
+    this.playGong(2, 400);
     this.setState(() => ({
       meditationRunning: false
     }));
+  };
+  playGong = (gongDuration, gongFrequency) => {
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const gong = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    gong.type = "sine";
+    gong.frequency.setValueAtTime(gongFrequency, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(
+      0.00001,
+      audioCtx.currentTime + gongDuration
+    );
+    gong.connect(gain);
+    gain.connect(audioCtx.destination);
+    gong.start(0);
+    gong.stop(gongDuration);
   };
 
   render() {
