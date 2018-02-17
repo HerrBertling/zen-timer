@@ -3,11 +3,11 @@
   background: transparent;
   -webkit-appearance: none;
   color: var(--fontStrong);
-  display: block;
+  display: inline-block;
   font-size: var(--fontSize);
   font-family: inherit;
   font-weight: bold;
   outline: none;
-  margin: 0;
+  margin: 0 var(--spacingM);
   padding: 0;
 }

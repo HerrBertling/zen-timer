@@ -1,8 +1,9 @@
 .button {
-  background-color: var(--fontColor);
-  border: 0;
-  border-radius: 40px;
-  color: var(--mainColor);
+  background: none;
+  border: 4px solid var(--fontColor);
+  border-radius: 100px;
+  color: var(--fontColor);
+  cursor: pointer;
   font-family: inherit;
   font-size: inherit;
   outline: none;

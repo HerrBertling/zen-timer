@@ -46,17 +46,19 @@ class App extends Component {
             <form onSubmit={this.startMeditation} className="form">
               <fieldset className="fieldset">
                 <legend className="title">Zen Timer</legend>
-                <span>I would like to meditate for</span>
+                <label htmlFor="duration">I would like to meditate for</label>
                 <Select
                   onChange={this.changeDuration}
                   times={[5, 10, 15, 20, 30, 40, 50, 60]}
                   value={this.state.duration}
+                  id="duration"
                 />
-                <span>with a reminder bell every</span>
+                <label htmlFor="reminder">with a reminder bell every</label>
                 <Select
                   onChange={this.changeReminder}
                   times={[2, 4, 5, 10]}
                   value={this.state.reminderEvery}
+                  id="reminder"
                 />
               </fieldset>
               <Button>Start</Button>

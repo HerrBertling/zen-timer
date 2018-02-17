@@ -4,15 +4,34 @@
   justify-content: space-around;
   align-items: center;
   height: 70vh;
-  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono",
-    "Droid Sans Mono", "Source Code Pro", monospace;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timerMinutes,
+.timerSeconds {
+  display: inline-block;
+  width: 70px;
+}
+.timerColon {
+  transform: translateY(-7px);
+  width: 20px;
 }
 
 .meditationAnimation {
   animation: meditation 2s ease-out alternate infinite;
   background: white;
+  border: 0;
   border-radius: 50%;
+  cursor: pointer;
   height: 30vw;
+  max-height: 300px;
+  max-width: 300px;
+  outline: none;
   width: 30vw;
 }
 
