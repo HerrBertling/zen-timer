@@ -10,32 +10,31 @@ class App extends Component {
   };
 
   changeDuration = event => {
-    this.setState({
-      ...this.state,
-      duration: event.target.value
-    });
+    const value = event.target.value;
+    this.setState(() => ({
+      duration: value
+    }));
   };
   changeReminder = event => {
-    this.setState({
-      ...this.state,
-      reminderEvery: event.target.value
-    });
+    const value = event.target.value;
+    this.setState(() => ({
+      reminderEvery: value
+    }));
   };
   startMeditation = event => {
-    this.setState({
-      ...this.state,
+    event.preventDefault();
+    this.setState(() => ({
       meditationRunning: true
-    });
+    }));
     const durationInMs = this.state.duration * 60000;
     setTimeout(() => {
       this.abortMeditation();
     }, durationInMs);
   };
   abortMeditation = () => {
-    this.setState({
-      ...this.state,
+    this.setState(() => ({
       meditationRunning: false
-    });
+    }));
   };
 
   render() {
