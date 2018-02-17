@@ -1,0 +1,60 @@
+.app {
+  align-items: center;
+  animation: appStart 2s cubic-bezier(0.165, 1.44, 0.44, 1) 1 forwards;
+  color: var(--fontColor);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fontSize);
+  font-weight: 200;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 700px;
+  opacity: 0;
+  padding: 0 var(--spacingM);
+}
+
+@keyframes appStart {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 10vh;
+  font-weight: 100;
+  margin: 0 0 var(--spacingL);
+  padding: 0;
+  width: 100%;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: var(--spacingXL);
+}
+
+.fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.fadeIn {
+  animation: fadeIn 1.4s ease-out 1 forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

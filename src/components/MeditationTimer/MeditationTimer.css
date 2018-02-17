@@ -1,0 +1,28 @@
+.meditation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono",
+    "Droid Sans Mono", "Source Code Pro", monospace;
+}
+
+.meditationAnimation {
+  animation: meditation 2s ease-out alternate infinite;
+  background: white;
+  border-radius: 50%;
+  height: 30vw;
+  width: 30vw;
+}
+
+@keyframes meditation {
+  from {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.6;
+    transform: scale(1.4);
+  }
+}

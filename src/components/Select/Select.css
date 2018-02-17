@@ -1,0 +1,13 @@
+.select {
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  color: var(--fontStrong);
+  display: block;
+  font-size: var(--fontSize);
+  font-family: inherit;
+  font-weight: bold;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
