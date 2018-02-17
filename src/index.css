@@ -12,15 +12,15 @@
 
 body {
   background-image: linear-gradient(
-    to top,
+    -10deg,
     #3f51b1 0%,
-    #5a55ae 13%,
-    #7b5fac 25%,
-    #8f6aae 38%,
-    #a86aa4 50%,
-    #cc6b8e 62%,
-    #f18271 75%,
-    #f3a469 87%,
+    #5a55ae 18%,
+    #7b5fac 27%,
+    #8f6aae 40%,
+    #a86aa4 53%,
+    #cc6b8e 66%,
+    #f18271 78%,
+    #f3a469 90%,
     #f7c978 100%
   );
   margin: 0;
