@@ -1,7 +1,7 @@
 .select {
   border: 0;
   background: transparent;
-  -webkit-appearance: none;
+  appearance: none;
   color: var(--fontStrong);
   display: inline-block;
   font-size: var(--fontSize);
